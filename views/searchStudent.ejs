@@ -1,0 +1,22 @@
+<%-include('layouts/header')-%> <%-include('layouts/navbar')-%>
+<div class="container">
+  <div class="row">
+    <div class="col-4 offset-4 card shadow-sm rounded p-5 mt-4">
+      <form action="\search" method="POST">
+        <h5>Search by id</h5>
+        <div class="form-group">
+          <label for="id">Enter id</label>
+          <input type="number" name="id" class="form-control" id="" />
+          <div class="text-center">
+            <input
+              type="submit"
+              value="Search"
+              class="btn mt-2 rounded btn-block btn-dark waves-effect"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<%-include('layouts/footer')-%>

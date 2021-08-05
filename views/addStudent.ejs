@@ -1,0 +1,99 @@
+<%-include('layouts/header')-%> <%-include('layouts/navbar')-%>
+<div class="row">
+  <div class="col-6 offset-3 card mt-5 shadow-sm rounded p-5">
+    <h5>Register Student</h5>
+    <form method="POST" action="/add" class="mt-2">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Student Id</label>
+        <input
+          name="id"
+          type="number"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Name</label>
+        <input
+          name="name"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Gender</label>
+       <select class="form-control" name="gender" id="">
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+           <option value="other">Other</option>
+       </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Dob</label>
+        <input
+          type="date"
+          class="form-control"
+          id="exampleInputPassword1"
+          name="dob"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">City</label>
+        <input
+          name="city"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">State</label>
+        <input
+          name="state"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input
+          name="email"
+          type="email"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Qualification</label>
+        <input
+          name="qualification"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Stream</label>
+        <input
+          name="stream"
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="text-center">
+        <button
+          type="submit"
+          class="btn mt-2 btn-block rounded waves-effect btn-dark"
+        >
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%-include('layouts/footer')-%>
